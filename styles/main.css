@@ -1,0 +1,43 @@
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.main-grid{
+  margin: 0 auto;
+}
+
+.grid-1{
+  display: grid;
+  grid-template-columns: 560px 280px;
+  
+}
+
+.grid-2{
+  display: grid;
+  grid-template-columns: 280px 560px;
+
+}
+
+.shorts-grid{
+  display: grid;
+  grid-template-columns: 280px 280px;
+}
+
+.shorts img{
+  height: 280px;
+  width: 280px;
+  border: 1px solid white;
+  object-fit: cover;
+  box-sizing: border-box;
+  display: block;
+}
+
+.longs img{
+  height: 560px;
+  width: 280px;
+  border: 1px solid white;
+  object-fit: cover;
+  box-sizing: border-box;
+  display: block;
+}
