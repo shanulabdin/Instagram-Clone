@@ -33,6 +33,10 @@ main{
   display: block;
 }
 
+.shorts img:hover{
+  opacity: 0.5;
+}
+
 .longs img{
   height: 560px;
   width: 280px;
