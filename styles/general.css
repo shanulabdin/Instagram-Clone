@@ -3,3 +3,11 @@ body{
   margin: 0;
   padding: 47px 0px 20px 78px;
 }
+
+@media (max-width: 950px) and (min-width: 500px){
+  body{
+    margin: 1px;
+    padding: 0;
+  }
+  
+}

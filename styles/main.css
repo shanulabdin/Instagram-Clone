@@ -1,3 +1,108 @@
+
+@media (max-width: 950px) and (min-width: 500px){
+  main{
+    display: flex;
+    justify-content: center;
+  }
+  .main-grid{
+    margin: 0 auto;
+    display: grid;
+    width: 1fr;
+  }
+  .main-grid{
+    margin: 0 auto;
+  }
+
+  .grid-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .grid-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+  }
+
+  .shorts-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .shorts, .longs{
+    position: relative;
+  }
+
+  .shorts img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    object-fit: cover;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .longs img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    object-fit: cover;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .overlay{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    font-family: Open Sans;
+    font-weight: 500;
+    font-size: 16px;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+  }
+  .overlay-items .overlay-icon{
+    height: 20px;
+    width: 20px;
+    border: none;
+  }
+  .overlay-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; 
+    margin: 5px;
+    opacity: 0;
+  }
+  .overlay-items .overlay-icon,
+  .overlay-items div{
+    margin: 5px; 
+  }
+
+  .shorts:hover .overlay,
+  .shorts:hover .overlay-items,
+  .longs:hover .overlay,
+  .longs:hover .overlay-items{
+    opacity: 1;
+  }
+}
+
+@media (min-width: 950px) {
+  .phone-bar{
+    display: none;
+  }
+
 main{
   display: flex;
   justify-content: center;
@@ -10,7 +115,6 @@ main{
 .grid-1{
   display: grid;
   grid-template-columns: 560px 280px;
-  
 }
 
 .grid-2{
@@ -90,4 +194,5 @@ main{
 .longs:hover .overlay,
 .longs:hover .overlay-items{
   opacity: 1;
+}
 }

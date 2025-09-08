@@ -9,61 +9,57 @@
   height: 10px;
 }
 
-@media (max-width: 950px){
-  .sidebar{
-    background-color: lightpink;
+@media (max-width: 950px) and (min-width: 500px){
+  .phone-bar{
+    background-color: white;
     color: black;
     position: fixed;
     left: 0px;
     bottom: 0px;
     right: 0px;
-    width: 72px;
+    height: 72px;
     border-right: 1px solid rgb(211, 211, 211);
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     
     z-index: 20;
+
+    padding: 0px 25px;
   }
   
-  .sidebar img{
-    width: 22px;
-    height: 22px;
+  .phone-bar img{
+    width: 26px;
+    height: 26px;
     padding: 11px;
-    margin-top: 10px;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .middle .pfp{
-    border-radius: 60px;
-  }
-  .sidebar img:hover{
+
+  .phone-bar img:hover{
     background-color: rgb(240, 240, 240);
+
   }
   
-  .top{
-    padding-bottom: 23px;
-    margin-top: 18px;
+  .phone-items .pfp{
+    border-radius: 50px;
   }
-  
+
+  .sidebar,
   .instagram, 
   .middle-items div, 
   .bottom-items div{
     display: none;
-    
-  }
-  
-  .middle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
-@media (max-width: 1260px) {
+@media (min-width: 950px) and (max-width: 1260px) {
   .sidebar{
     background-color: white;
     color: black;
